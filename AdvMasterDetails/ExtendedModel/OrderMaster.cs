@@ -1,4 +1,4 @@
-﻿namespace AdvMasterDetails
+﻿namespace AdvMasterDetails.Models
 {
     public partial class OrderMaster
     {

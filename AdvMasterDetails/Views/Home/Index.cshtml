@@ -1,9 +1,4 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Master-Details Entry Form</h2>
+﻿<h2>Master-Details Entry Form</h2>
 <div class="container">
     <div class="master">
         <h2>Order</h2>
@@ -67,12 +62,9 @@
             </tr>
         </table>
     </div>
-    
+
     <div id="orderItems">
         <table class="table table-responsive" id="orderedItems">
-            <tr>
-                <td></td>
-            </tr>
         </table>
         <span id="orderItemError" style="color: red"></span>
     </div>
@@ -84,9 +76,10 @@
 @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
 @*<link href="//code/jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />*@
 @*<script src="//code/jquery.com/ui/1.11.4/jquery-ui.js"></script>*@
+@*<script src="~/Scripts/myScripts.js"></script>*@
 
 <script type="text/javascript">
-    $(function() {
+    $(function () {
         $("#orderDate").datepicker({
             dateFormat: 'mm-dd-yy'
         });
@@ -99,6 +92,7 @@
         color: red;
         font-size: 90%;
     }
+
     tr.error {
         background-color: rgba(255, 0, 0, .035);
     }
