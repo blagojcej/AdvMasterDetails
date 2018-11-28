@@ -151,33 +151,6 @@ $(document).ready(function() {
                 list.push(orderItem);
             }
 
-            /*
-            var quantityEl = $('.quantity', this);
-            var quantityVal = quantityEl.val();
-
-            if ($('select.product', this).val() == 0) {
-                errorItemCount++;
-                $(this).addClass('error');
-            }
-            else if ((parseInt($('.quantity', this).val()) || 0) == 0) {
-                errorItemCount++;
-                $(this).addClass('error');
-            }
-            else if ($('.rate', this).val() == "" ||
-                isNaN($('.rate', this).val())) {
-                errorItemCount++;
-                $(this).addClass('error');
-            } else {
-                    var orderItem = {
-                        ProductID: $('select.product', this).val(),
-                        Quantity: parseInt($('.quantity', this).val()),
-                        Rate: parseFloat($('.rate', this).val())
-                    }
-
-                    list.push(orderItem);
-            }
-            */
-
         });
 
         if (errorItemCount > 0) {
@@ -224,7 +197,7 @@ $(document).ready(function() {
                         alert('Successfully saved');
                         //Here we will clear the form
                         list = [];
-                        $('#orderNo, #orderDate, #description').val();
+                        $('#orderNo, #orderDate, #description').val('');
                         $('#orderedItems').empty();
                     } else {
                         alert('Error');
